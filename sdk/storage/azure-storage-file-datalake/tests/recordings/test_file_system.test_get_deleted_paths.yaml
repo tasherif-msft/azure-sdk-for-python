@@ -1,0 +1,1663 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - cbbb4f83-3a79-11eb-9df8-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:53:54 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dfdfdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 09 Dec 2020 23:53:56 GMT
+      ETag:
+      - '"0x8D89C9DB10C3534"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:53:56 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 896a7475-601e-003b-6286-ce3925000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - ce29bb48-3a79-11eb-88de-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:53:58 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dfdfdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:54:01 GMT
+      ETag:
+      - '"0x8D89C9DB417058E"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:54:01 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - e9ee1e1d-f01f-0006-0c86-ce4f3e000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - d0b877df-3a79-11eb-8306-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:54:03 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dfdfdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:54:02 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520316429750804'
+      x-ms-request-id:
+      - e9ee1e20-f01f-0006-0d86-ce4f3e000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - d1999cee-3a79-11eb-afca-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:54:04 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?delimiter=%2F&showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>UnsupportedQueryParameter</Code><Message>One
+        of the query parameters specified in the request URI is not supported.\nRequestId:896a748b-601e-003b-6786-ce3925000000\nTime:2020-12-09T23:54:04.3617484Z</Message><QueryParameterName>delimiter</QueryParameterName></Error>"
+    headers:
+      Content-Length:
+      - '318'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 23:54:04 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - UnsupportedQueryParameter
+      x-ms-request-id:
+      - 896a748b-601e-003b-6786-ce3925000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 400
+      message: One of the query parameters specified in the request URI is not supported.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 14fef5ea-3a7a-11eb-90ca-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:55:57 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 09 Dec 2020 23:55:58 GMT
+      ETag:
+      - '"0x8D89C9DF9EA6D0C"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:55:58 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 21f0e77c-001e-002d-4e86-cecff2000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 1724d47a-3a7a-11eb-b300-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:56:01 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:56:02 GMT
+      ETag:
+      - '"0x8D89C9DFC5DBE04"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:56:03 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - cff438fc-f01f-0016-7386-ce8a56000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 18e0177b-3a7a-11eb-ad18-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:56:04 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:56:04 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520317640062210'
+      x-ms-request-id:
+      - cff438ff-f01f-0016-7486-ce8a56000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 19ca6e1a-3a7a-11eb-81c8-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:56:05 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?delimiter=&showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>UnsupportedQueryParameter</Code><Message>One
+        of the query parameters specified in the request URI is not supported.\nRequestId:21f0e788-001e-002d-5086-cecff2000000\nTime:2020-12-09T23:56:05.4781487Z</Message><QueryParameterName>delimiter</QueryParameterName></Error>"
+    headers:
+      Content-Length:
+      - '318'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 23:56:05 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - UnsupportedQueryParameter
+      x-ms-request-id:
+      - 21f0e788-001e-002d-5086-cecff2000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 400
+      message: One of the query parameters specified in the request URI is not supported.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 3bf82932-3a7a-11eb-bfde-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:57:03 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 09 Dec 2020 23:57:05 GMT
+      ETag:
+      - '"0x8D89C9E2130116D"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:57:04 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 19afea24-601e-002b-6d86-cefc4d000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 3e1763b7-3a7a-11eb-9989-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:57:06 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:57:09 GMT
+      ETag:
+      - '"0x8D89C9E23A444AA"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:57:08 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - fd619d64-c01f-0032-3287-ce7cf6000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 404c573e-3a7a-11eb-a383-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:57:10 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:57:10 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520318302042253'
+      x-ms-request-id:
+      - fd619d67-c01f-0032-3387-ce7cf6000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6dcd7fae-3a7a-11eb-925d-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:58:26 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfdsdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 09 Dec 2020 23:58:28 GMT
+      ETag:
+      - '"0x8D89C9E534762B3"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:58:28 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 73863080-d01e-002e-1b87-ce2e96000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6fd516b9-3a7a-11eb-98bb-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:58:30 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdsdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:58:32 GMT
+      ETag:
+      - '"0x8D89C9E5526B05B"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 23:58:32 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - 13a93999-c01f-0040-7287-ce7bb9000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 716883db-3a7a-11eb-bca3-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:58:32 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfdsdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 09 Dec 2020 23:58:32 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520319126175094'
+      x-ms-request-id:
+      - 13a9399c-c01f-0040-7387-ce7bb9000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 73094be1-3a7a-11eb-a271-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 23:58:35 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 23:58:34 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 7386309d-d01e-002e-2f87-ce2e96000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - a64b1e2f-3a7a-11eb-9daa-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:00:01 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgfdsdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:00:04 GMT
+      ETag:
+      - '"0x8D89C9E8C1BBC97"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:00:04 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - a81168d0-101e-000e-2487-ce5531000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - a905eeed-3a7a-11eb-87c7-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:00:06 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgfdsdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:00:08 GMT
+      ETag:
+      - '"0x8D89C9E8E9FD1C7"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:00:08 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - 570cc43d-201f-0048-4387-ce61b6000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - aaddc354-3a7a-11eb-bb5e-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:00:09 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgfdsdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:00:08 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520320089568366'
+      x-ms-request-id:
+      - 570cc440-201f-0048-4487-ce61b6000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - b0b707a5-3a7a-11eb-95ff-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:00:19 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgfdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:00:04 GMT</Last-Modified><Etag>\"0x8D89C9E8C1BBC97\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 10 Dec 2020 00:00:18 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - a81168ed-101e-000e-2a87-ce5531000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 28ba2f97-3a7b-11eb-a853-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:03:40 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgffgdsdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:03:54 GMT
+      ETag:
+      - '"0x8D89C9F14FD830B"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:03:53 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 2dce2e0b-401e-003c-5f87-ce5546000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 319ff3fa-3a7b-11eb-bebb-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:03:55 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgffgdsdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:04:00 GMT
+      ETag:
+      - '"0x8D89C9F1905E1D7"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:04:00 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - 97a8a4ae-001f-0012-4487-ce0751000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 35429dd3-3a7b-11eb-a665-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:04:01 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgffgdsdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:04:00 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520322411258591'
+      x-ms-request-id:
+      - 97a8a4b1-001f-0012-4587-ce0751000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 8d0a29ab-3a7b-11eb-b122-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:06:28 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgdgffgdsdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:06:30 GMT
+      ETag:
+      - '"0x8D89C9F72966814"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:06:30 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - e97ce8a6-d01e-004c-4d88-ceecb1000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 8ef9c802-3a7b-11eb-b806-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:06:31 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdgffgdsdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:06:32 GMT
+      ETag:
+      - '"0x8D89C9F73D80B1C"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 00:06:33 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - b3711353-901f-003f-5e88-ceb422000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 9016bd40-3a7b-11eb-9603-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:06:33 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdgffgdsdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 00:06:32 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520323933439534'
+      x-ms-request-id:
+      - b3711356-901f-003f-5f88-ceb422000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 9049a332-3a7b-11eb-b27c-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 00:06:34 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:06:30 GMT</Last-Modified><Etag>\"0x8D89C9F72966814\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgffgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:03:53 GMT</Last-Modified><Etag>\"0x8D89C9F14FD830B\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 10 Dec 2020 00:06:33 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - e97ce8b8-d01e-004c-5288-ceecb1000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - db7395ec-3a88-11eb-be42-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 01:41:43 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgdfdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 01:41:45 GMT
+      ETag:
+      - '"0x8D89CACC09C7722"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 01:41:45 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 035862eb-801e-0033-5a95-ce232a000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - dd4bae56-3a88-11eb-9856-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 01:41:46 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 01:41:47 GMT
+      ETag:
+      - '"0x8D89CACC29E1602"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 01:41:48 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - 49d32d79-301f-0044-2b95-cef6be000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - dee1b898-3a88-11eb-bd90-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 01:41:49 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 01:41:49 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520381094025956'
+      x-ms-request-id:
+      - 49d32d7c-301f-0044-2c95-cef6be000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - e1427397-3a88-11eb-9c94-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 01:41:53 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdbfgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:44:13 GMT</Last-Modified><Etag>\"0x8D89CA4B74A6CD4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:30:57 GMT</Last-Modified><Etag>\"0x8D89CA2DC92F68C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 01:41:45 GMT</Last-Modified><Etag>\"0x8D89CACC09C7722\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:07:55 GMT</Last-Modified><Etag>\"0x8D89C9FA4CF36B4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:13:09 GMT</Last-Modified><Etag>\"0x8D89CA06023F087\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgffgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:03:53 GMT</Last-Modified><Etag>\"0x8D89C9F14FD830B\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 10 Dec 2020 01:41:52 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 03586305-801e-0033-6095-ce232a000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6c540180-3a8c-11eb-9cd0-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:07:15 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgdfdfdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 02:07:15 GMT
+      ETag:
+      - '"0x8D89CB050EF682E"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 02:07:15 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 4358759b-901e-0000-3599-ce7c81000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6d51edc7-3a8c-11eb-9740-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:07:16 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdfdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 02:07:17 GMT
+      ETag:
+      - '"0x8D89CB051FE627F"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 02:07:17 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - 4668fc5b-501f-0030-2799-cec24e000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6e490032-3a8c-11eb-963b-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:07:18 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdfdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 02:07:18 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520396381099329'
+      x-ms-request-id:
+      - 4668fc60-501f-0030-2899-cec24e000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 6e84a98b-3a8c-11eb-b5ee-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:07:18 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdbfgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:44:13 GMT</Last-Modified><Etag>\"0x8D89CA4B74A6CD4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdfdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 02:07:15 GMT</Last-Modified><Etag>\"0x8D89CB050EF682E\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:30:57 GMT</Last-Modified><Etag>\"0x8D89CA2DC92F68C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 01:41:45 GMT</Last-Modified><Etag>\"0x8D89CACC09C7722\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:07:55 GMT</Last-Modified><Etag>\"0x8D89C9FA4CF36B4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:13:09 GMT</Last-Modified><Etag>\"0x8D89CA06023F087\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgffgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:03:53 GMT</Last-Modified><Etag>\"0x8D89C9F14FD830B\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 10 Dec 2020 02:07:18 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 435875ab-901e-0000-3699-ce7c81000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 11eaec09-3a8e-11eb-8af6-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:19:02 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/dffdgfgdfdwvfdfdsdggns41b81006?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 02:19:04 GMT
+      ETag:
+      - '"0x8D89CB1F728B63B"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 02:19:04 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - a2101443-801e-001c-099a-ce2ee1000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 13999585-3a8e-11eb-8304-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:19:05 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdwvfdfdsdggns41b81006/dir1?resource=directory
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 02:19:06 GMT
+      ETag:
+      - '"0x8D89CB1F8BE3DDD"'
+      Last-Modified:
+      - Thu, 10 Dec 2020 02:19:06 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-id:
+      - ac1c8988-101f-001e-209a-ce9059000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 14ffd5eb-3a8e-11eb-aacb-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:19:07 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: DELETE
+    uri: https://storagename.dfs.preprod.core.windows.net/dffdgfgdfdwvfdfdsdggns41b81006/dir1?recursive=true
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 10 Dec 2020 02:19:06 GMT
+      Server:
+      - Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-delete-type-permanent:
+      - 'false'
+      x-ms-deletion-id:
+      - '132520403476522328'
+      x-ms-request-id:
+      - ac1c898b-101f-001e-219a-ce9059000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 17b1dbd3-3a8e-11eb-8348-c8348e5fffbf
+      x-ms-date:
+      - Thu, 10 Dec 2020 02:19:12 GMT
+      x-ms-version:
+      - '2020-06-12'
+    method: GET
+    uri: https://storagename.blob.preprod.core.windows.net/?showonly=deleted&restype=container&comp=list
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><EnumerationResults
+        ServiceEndpoint=\"https://storagename.blob.preprod.core.windows.net/\"><Containers><Container><Name>dfdfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:53:56 GMT</Last-Modified><Etag>\"0x8D89C9DB10C3534\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:55:58 GMT</Last-Modified><Etag>\"0x8D89C9DF9EA6D0C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:57:04 GMT</Last-Modified><Etag>\"0x8D89C9E2130116D\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfdsdsdggns41b81006</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 23:58:28 GMT</Last-Modified><Etag>\"0x8D89C9E534762B3\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdbfgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:44:13 GMT</Last-Modified><Etag>\"0x8D89CA4B74A6CD4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:30:57 GMT</Last-Modified><Etag>\"0x8D89CA2DC92F68C\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 01:41:45 GMT</Last-Modified><Etag>\"0x8D89CACC09C7722\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdfdwvfdfdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 02:19:04 GMT</Last-Modified><Etag>\"0x8D89CB1F728B63B\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:07:55 GMT</Last-Modified><Etag>\"0x8D89C9FA4CF36B4\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgdgffcxgdsfddsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:13:09 GMT</Last-Modified><Etag>\"0x8D89CA06023F087\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>dffdgfgffgdsdsdggns41b81006</Name><Properties><Last-Modified>Thu,
+        10 Dec 2020 00:03:53 GMT</Last-Modified><Etag>\"0x8D89C9F14FD830B\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>retentiontest</Name><Properties><Last-Modified>Tue,
+        08 Dec 2020 18:30:35 GMT</Last-Modified><Etag>\"0x8D89BA75AA302EF\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container><Container><Name>test2</Name><Properties><Last-Modified>Wed,
+        09 Dec 2020 19:17:07 GMT</Last-Modified><Etag>\"0x8D89C7705055ECC\"</Etag><LeaseStatus>unlocked</LeaseStatus><LeaseState>available</LeaseState><DefaultEncryptionScope>$account-encryption-key</DefaultEncryptionScope><DenyEncryptionScopeOverride>false</DenyEncryptionScopeOverride><HasImmutabilityPolicy>false</HasImmutabilityPolicy><HasLegalHold>false</HasLegalHold></Properties></Container></Containers><NextMarker
+        /></EnumerationResults>"
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 10 Dec 2020 02:19:11 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - a2101454-801e-001c-0f9a-ce2ee1000000
+      x-ms-version:
+      - '2020-06-12'
+    status:
+      code: 200
+      message: OK
+version: 1

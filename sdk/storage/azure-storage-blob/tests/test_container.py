@@ -1075,7 +1075,7 @@ class StorageContainerTest(StorageTestCase):
     @GlobalStorageAccountPreparer()
     def test_list_blobs_with_delimiter(self, resource_group, location, storage_account, storage_account_key):
         bsc = BlobServiceClient(self.account_url(storage_account, "blob"), storage_account_key)
-        container = self._create_container(bsc)
+        container = self._create_container(bsc, prefix="fgfvdgif")
         data = b'hello world'
 
         container.get_blob_client('a/blob1').upload_blob(data)

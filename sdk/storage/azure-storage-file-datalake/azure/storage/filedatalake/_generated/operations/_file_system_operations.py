@@ -529,7 +529,7 @@ class FileSystemOperations(object):
         query_parameters = {}
         if prefix is not None:
             query_parameters['prefix'] = self._serialize.query("prefix", prefix, 'str')
-        query_parameters['delimiter'] = self._serialize.query("delimiter", delimiter, 'str')
+        #query_parameters['delimiter'] = self._serialize.query("delimiter", delimiter, 'str')
         if marker is not None:
             query_parameters['marker'] = self._serialize.query("marker", marker, 'str')
         if max_results is not None:

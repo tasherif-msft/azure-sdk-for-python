@@ -713,11 +713,15 @@ class ContainerClient(StorageAccountHostsMixin):
             include=include,
             timeout=timeout,
             **kwargs)
-        return BlobPrefix(
-            command,
-            prefix=name_starts_with,
-            results_per_page=results_per_page,
-            delimiter=delimiter)
+        return ItemPaged(
+            command, prefix=name_starts_with,
+            page_iterator_class=BlobPropertiesPaged,
+            results_per_page=results_per_page, **kwargs)
+        #return BlobPrefix(
+        #    command,
+        #    prefix=name_starts_with,
+        #    results_per_page=results_per_page,
+        #    delimiter=delimiter)
 
     @distributed_trace
     def upload_blob(

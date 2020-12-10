@@ -179,13 +179,13 @@ class StorageTestCase(unittest.TestCase):
         }
 
     def _get_account_url(self):
-        return "{}://{}.dfs.core.windows.net".format(
+        return "{}://{}.dfs.preprod.core.windows.net".format(
             self.settings.PROTOCOL,
             self.settings.STORAGE_DATA_LAKE_ACCOUNT_NAME
         )
 
     def _get_oauth_account_url(self):
-        return "{}://{}.blob.core.windows.net".format(
+        return "{}://{}.blob.preprod.core.windows.net".format(
             self.settings.PROTOCOL,
             self.settings.STORAGE_DATA_LAKE_ACCOUNT_NAME
         )

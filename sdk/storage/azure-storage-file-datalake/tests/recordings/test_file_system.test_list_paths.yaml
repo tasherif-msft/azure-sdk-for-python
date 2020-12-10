@@ -351,4 +351,255 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - f39e78ae-39bc-11eb-b8cf-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 01:22:06 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/filesystemdb5c0d4c?restype=container
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 09 Dec 2020 01:22:07 GMT
+      ETag:
+      - '"0x8D89BE0D82D769A"'
+      Last-Modified:
+      - Wed, 09 Dec 2020 01:22:07 GMT
+      Transfer-Encoding:
+      - chunked
+      x-ms-request-id:
+      - 1a73f359-701e-0008-38c9-cdc247000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - f44814fd-39bc-11eb-891b-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 01:22:07 GMT
+      x-ms-properties:
+      - ''
+      x-ms-version:
+      - '2020-06-12'
+    method: PUT
+    uri: https://storagename.dfs.preprod.core.windows.net/filesystemdb5c0d4c/dir10?resource=directory
+  response:
+    body:
+      string: '{"error":{"code":"InvalidHeaderValue","message":"The value for one
+        of the HTTP headers is not in the correct format.\nRequestId:a2167d98-601f-0002-7bc9-cde805000000\nTime:2020-12-09T01:22:08.2475569Z"}}'
+    headers:
+      Content-Length:
+      - '202'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 09 Dec 2020 01:22:08 GMT
+      x-ms-request-id:
+      - a2167d98-601f-0002-7bc9-cde805000000
+    status:
+      code: 400
+      message: The value for one of the HTTP headers is not in the correct format.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - 9bde5c58-3a62-11eb-ad93-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 21:07:56 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/filesystemdb5c0d4c?restype=container
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>ServerBusy</Code><Message>The
+        server is busy.\nRequestId:a7a016e7-c01e-0000-3b6f-ce4ab0000000\nTime:2020-12-09T21:07:56.7397070Z</Message></Error>"
+    headers:
+      Content-Length:
+      - '198'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 21:07:55 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - ServerBusy
+      x-ms-request-id:
+      - a7a016e7-c01e-0000-3b6f-ce4ab0000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 503
+      message: The server is busy.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - a5dceff8-3a62-11eb-94d8-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 21:08:12 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/filesystemdb5c0d4c?restype=container
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>ServerBusy</Code><Message>The
+        server is busy.\nRequestId:a7a0172b-c01e-0000-4f6f-ce4ab0000000\nTime:2020-12-09T21:08:12.3229208Z</Message></Error>"
+    headers:
+      Content-Length:
+      - '198'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 21:08:11 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - ServerBusy
+      x-ms-request-id:
+      - a7a0172b-c01e-0000-4f6f-ce4ab0000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 503
+      message: The server is busy.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - b4041054-3a62-11eb-b5d4-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 21:08:36 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/filesystemdb5c0d4c?restype=container
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>ServerBusy</Code><Message>The
+        server is busy.\nRequestId:a7a01794-c01e-0000-746f-ce4ab0000000\nTime:2020-12-09T21:08:36.0690055Z</Message></Error>"
+    headers:
+      Content-Length:
+      - '198'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 21:08:35 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - ServerBusy
+      x-ms-request-id:
+      - a7a01794-c01e-0000-746f-ce4ab0000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 503
+      message: The server is busy.
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-storage-dfs/12.2.1 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+      x-ms-client-request-id:
+      - cd8e74f6-3a62-11eb-9d04-c8348e5fffbf
+      x-ms-date:
+      - Wed, 09 Dec 2020 21:09:19 GMT
+      x-ms-version:
+      - '2020-04-08'
+    method: PUT
+    uri: https://storagename.blob.preprod.core.windows.net/filesystemdb5c0d4c?restype=container
+  response:
+    body:
+      string: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>ServerBusy</Code><Message>The
+        server is busy.\nRequestId:a7a0184e-c01e-0000-306f-ce4ab0000000\nTime:2020-12-09T21:09:18.9208402Z</Message></Error>"
+    headers:
+      Content-Length:
+      - '198'
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 09 Dec 2020 21:09:18 GMT
+      Server:
+      - Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-error-code:
+      - ServerBusy
+      x-ms-request-id:
+      - a7a0184e-c01e-0000-306f-ce4ab0000000
+      x-ms-version:
+      - '2020-04-08'
+    status:
+      code: 503
+      message: The server is busy.
 version: 1

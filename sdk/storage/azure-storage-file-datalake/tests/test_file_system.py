@@ -226,6 +226,14 @@ class FileSystemTest(StorageTestCase):
         self.assertEqual(len(paths), 6)
 
     @record
+    def test_get_deleted_paths(self):
+        # Arrange
+        file_system = self._create_file_system(file_system_prefix='dffdgfgdfdwvfdfdsdggns')
+        dir = file_system.create_directory("dir1")
+        dir.delete_directory()
+        paths = list(file_system.get_deleted_paths())
+
+    @record
     def test_list_paths_which_are_all_files(self):
         # Arrange
         file_system = self._create_file_system()
