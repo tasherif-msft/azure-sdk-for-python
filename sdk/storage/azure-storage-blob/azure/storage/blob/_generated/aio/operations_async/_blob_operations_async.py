@@ -1428,6 +1428,141 @@ class BlobOperations:
             return cls(response, None, response_headers)
     set_metadata.metadata = {'url': '/{containerName}/{blob}'}
 
+    async def get_metadata(self, snapshot=None, version_id=None, timeout=None, request_id=None, lease_access_conditions=None, cpk_info=None, modified_access_conditions=None, *, cls=None, **kwargs):
+        """The Get Metadata operation returns all user-defined metadata for the
+        specified blob.
+
+        :param snapshot: The snapshot parameter is an opaque DateTime value
+         that, when present, specifies the blob snapshot to retrieve. For more
+         information on working with blob snapshots, see <a
+         href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/creating-a-snapshot-of-a-blob">Creating
+         a Snapshot of a Blob.</a>
+        :type snapshot: str
+        :param version_id: The version id parameter is an opaque DateTime
+         value that, when present, specifies the version of the blob to operate
+         on. It's for service version 2019-10-10 and newer.
+        :type version_id: str
+        :param timeout: The timeout parameter is expressed in seconds. For
+         more information, see <a
+         href="https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/setting-timeouts-for-blob-service-operations">Setting
+         Timeouts for Blob Service Operations.</a>
+        :type timeout: int
+        :param request_id: Provides a client-generated, opaque value with a 1
+         KB character limit that is recorded in the analytics logs when storage
+         analytics logging is enabled.
+        :type request_id: str
+        :param lease_access_conditions: Additional parameters for the
+         operation
+        :type lease_access_conditions:
+         ~azure.storage.blob.models.LeaseAccessConditions
+        :param cpk_info: Additional parameters for the operation
+        :type cpk_info: ~azure.storage.blob.models.CpkInfo
+        :param modified_access_conditions: Additional parameters for the
+         operation
+        :type modified_access_conditions:
+         ~azure.storage.blob.models.ModifiedAccessConditions
+        :param callable cls: A custom type or function that will be passed the
+         direct response
+        :return: None or the result of cls(response)
+        :rtype: None
+        :raises:
+         :class:`StorageErrorException<azure.storage.blob.models.StorageErrorException>`
+        """
+        error_map = kwargs.pop('error_map', None)
+        lease_id = None
+        if lease_access_conditions is not None:
+            lease_id = lease_access_conditions.lease_id
+        encryption_key = None
+        if cpk_info is not None:
+            encryption_key = cpk_info.encryption_key
+        encryption_key_sha256 = None
+        if cpk_info is not None:
+            encryption_key_sha256 = cpk_info.encryption_key_sha256
+        encryption_algorithm = None
+        if cpk_info is not None:
+            encryption_algorithm = cpk_info.encryption_algorithm
+        if_modified_since = None
+        if modified_access_conditions is not None:
+            if_modified_since = modified_access_conditions.if_modified_since
+        if_unmodified_since = None
+        if modified_access_conditions is not None:
+            if_unmodified_since = modified_access_conditions.if_unmodified_since
+        if_match = None
+        if modified_access_conditions is not None:
+            if_match = modified_access_conditions.if_match
+        if_none_match = None
+        if modified_access_conditions is not None:
+            if_none_match = modified_access_conditions.if_none_match
+        if_tags = None
+        if modified_access_conditions is not None:
+            if_tags = modified_access_conditions.if_tags
+
+        comp = "metadata"
+
+        # Construct URL
+        url = self.get_metadata.metadata['url']
+        path_format_arguments = {
+            'url': self._serialize.url("self._config.url", self._config.url, 'str', skip_quote=True)
+        }
+        url = self._client.format_url(url, **path_format_arguments)
+
+        # Construct parameters
+        query_parameters = {}
+        if snapshot is not None:
+            query_parameters['snapshot'] = self._serialize.query("snapshot", snapshot, 'str')
+        if version_id is not None:
+            query_parameters['versionid'] = self._serialize.query("version_id", version_id, 'str')
+        if timeout is not None:
+            query_parameters['timeout'] = self._serialize.query("timeout", timeout, 'int', minimum=0)
+        query_parameters['comp'] = self._serialize.query("comp", comp, 'str')
+
+        # Construct headers
+        header_parameters = {}
+        header_parameters['x-ms-version'] = self._serialize.header("self._config.version", self._config.version, 'str')
+        if request_id is not None:
+            header_parameters['x-ms-client-request-id'] = self._serialize.header("request_id", request_id, 'str')
+        if lease_id is not None:
+            header_parameters['x-ms-lease-id'] = self._serialize.header("lease_id", lease_id, 'str')
+        if encryption_key is not None:
+            header_parameters['x-ms-encryption-key'] = self._serialize.header("encryption_key", encryption_key, 'str')
+        if encryption_key_sha256 is not None:
+            header_parameters['x-ms-encryption-key-sha256'] = self._serialize.header("encryption_key_sha256", encryption_key_sha256, 'str')
+        if encryption_algorithm is not None:
+            header_parameters['x-ms-encryption-algorithm'] = self._serialize.header("encryption_algorithm", encryption_algorithm, 'EncryptionAlgorithmType')
+        if if_modified_since is not None:
+            header_parameters['If-Modified-Since'] = self._serialize.header("if_modified_since", if_modified_since, 'rfc-1123')
+        if if_unmodified_since is not None:
+            header_parameters['If-Unmodified-Since'] = self._serialize.header("if_unmodified_since", if_unmodified_since, 'rfc-1123')
+        if if_match is not None:
+            header_parameters['If-Match'] = self._serialize.header("if_match", if_match, 'str')
+        if if_none_match is not None:
+            header_parameters['If-None-Match'] = self._serialize.header("if_none_match", if_none_match, 'str')
+        if if_tags is not None:
+            header_parameters['x-ms-if-tags'] = self._serialize.header("if_tags", if_tags, 'str')
+
+        # Construct and send request
+        request = self._client.get(url, query_parameters, header_parameters)
+        pipeline_response = await self._client._pipeline.run(request, stream=False, **kwargs)
+        response = pipeline_response.http_response
+
+        if response.status_code not in [200]:
+            map_error(status_code=response.status_code, response=response, error_map=error_map)
+            raise models.StorageErrorException(response, self._deserialize)
+
+        if cls:
+            response_headers = {
+                'Last-Modified': self._deserialize('rfc-1123', response.headers.get('Last-Modified')),
+                'x-ms-meta': self._deserialize('{str}', response.headers.get('x-ms-meta')),
+                'ETag': self._deserialize('str', response.headers.get('ETag')),
+                'x-ms-client-request-id': self._deserialize('str', response.headers.get('x-ms-client-request-id')),
+                'x-ms-request-id': self._deserialize('str', response.headers.get('x-ms-request-id')),
+                'x-ms-version': self._deserialize('str', response.headers.get('x-ms-version')),
+                'Date': self._deserialize('rfc-1123', response.headers.get('Date')),
+                'x-ms-error-code': self._deserialize('str', response.headers.get('x-ms-error-code')),
+            }
+            return cls(response, None, response_headers)
+    get_metadata.metadata = {'url': '/{containerName}/{blob}'}
+
     async def acquire_lease(self, timeout=None, duration=None, proposed_lease_id=None, request_id=None, modified_access_conditions=None, *, cls=None, **kwargs):
         """[Update] The Lease Blob operation establishes and manages a lock on a
         blob for write and delete operations.
