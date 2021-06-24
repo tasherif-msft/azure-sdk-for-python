@@ -16,7 +16,7 @@ autorest --v3 --python
 
 ### Settings
 ``` yaml
-input-file: https://raw.githubusercontent.com/Azure/azure-rest-api-specs/storage-dataplane-preview/specification/storage/data-plane/Microsoft.StorageDataLake/stable/2020-06-12/DataLakeStorage.json
+input-file: C:\Projects\azure-rest-api-specs\specification\storage\data-plane\Microsoft.StorageDataLake\stable\2020-06-12\DataLakeStorage.json
 output-folder: ../azure/storage/filedatalake/_generated
 namespace: azure.storage.filedatalake
 no-namespace-folders: true
@@ -35,4 +35,23 @@ directive:
   where: $["x-ms-paths"]["/{filesystem}?restype=container&comp=list&hierarchy"].get
   transform: >
     delete $["x-ms-pageable"];
+```
+
+### Don't include container or blob in path - we have direct URIs.
+``` yaml
+directive:
+- from: swagger-document
+  where: $["x-ms-paths"]
+  transform: >
+    for (const property in $)
+    {
+        if (property.includes('/{filesystem}/{path}'))
+        {
+            $[property]["parameters"] = $[property]["parameters"].filter(function(param) { return (typeof param['$ref'] === "undefined") || (false == param['$ref'].endsWith("#/parameters/FileSystem") && false == param['$ref'].endsWith("#/parameters/Path"))});
+        } 
+        else if (property.includes('/{filesystem}'))
+        {
+            $[property]["parameters"] = $[property]["parameters"].filter(function(param) { return (typeof param['$ref'] === "undefined") || (false == param['$ref'].endsWith("#/parameters/FileSystem"))});
+        }
+    }
 ```
